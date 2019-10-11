@@ -1,5 +1,5 @@
 {
-	"name": "@service_now_customer/cicd-test-application",
+	"name": "@company/cicd-test-application",
 	"description": "dummy project to trigger CICD",
 	"repository": {},
 	"license": "ISC",
