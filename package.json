@@ -1,78 +1,33 @@
 {
-  "name": "sn-cicd",
-  "version": "4.0.10",
-  "description": "CICD service for Service-Now",
-  "main": "lib/cicd.js",
-  "scripts": {
-    "start": "node server.js",
-    "worker": "node worker.js",
-    "server": "node server.js",
-    "startMonitored": "nodemon --inspect server.js",
-    "test": "mocha",
-    "devServer": "nodemon --ignore cert/**/* --ignore db/**/* --verbose --delay 2 server.js",
-    "devWorker": "nodemon --ignore cert/**/* --ignore db/**/* --verbose --delay 2 worker.js",
-    "setup": "npm cache clean && rm -rf node_modules && npm install"
-  },
-  "author": "Boris Moers",
-  "license": "LGPL-3.0",
-  "dependencies": {
-    "any-shell-escape": "^0.1.1",
-    "bluebird": "^3.5.3",
-    "body-parser": "^1.18.3",
-    "camelcase": "^5.2.0",
-    "command-exists": "^1.2.8",
-    "console-stamp": "^0.2.7",
-    "dotenv": "^8.1.0",
-    "elementtree": "^0.1.7",
-    "es6-dynamic-template": "^2.0.0",
-    "express": "^4.16.4",
-    "express-fileupload": "^0.4.0",
-    "extract-zip": "^1.6.7",
-    "fast-diff": "^1.2.0",
-    "figlet": "^1.2.4",
-    "fs-extra": "^8.1.0",
-    "gulp-git": "^2.9.0",
-    "html-entities": "^1.2.1",
-    "mkdirp": "^0.5.1",
-    "nedb": "^1.8.0",
-    "node-xml-stream-parser": "^1.0.7",
-    "nodemailer": "^6.3.0",
-    "object-assign-deep": "^0.4.0",
-    "puppeteer": "1.17.0",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.4",
-    "serve-static": "^1.13.2",
-    "sn-project": "github:bmoers/sn-project#semver:^3.8.0",
-    "sn-rest-client": "github:bmoers/sn-rest-client#semver:^2",
-    "socket.io": "^2.3.0",
-    "socket.io-client": "^2.3.0",
-    "split": "^1.0.1",
-    "strip-ansi": "^5.2.0",
-    "tmp": "^0.1.0",
-    "unescape": "^1.0.1",
-    "uuid": "^3.3.3",
-    "xml-js": "^1.6.11"
-  },
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.2.0",
-    "nodemon": "^1.19.2",
-    "tree-kill": "^1.2.1"
-  },
-  "directories": {
-    "lib": "lib"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bmoers/sn-cicd.git"
-  },
-  "keywords": [
-    "CICD",
-    "DevOps",
-    "Service-Now"
-  ],
-  "bugs": {
-    "url": "https://github.com/bmoers/sn-cicd/issues"
-  },
-  "homepage": "https://github.com/bmoers/sn-cicd#readme"
+	"name": "@service_now_customer/cicd-test-application",
+	"description": "dummy project to trigger CICD",
+	"repository": {},
+	"license": "ISC",
+	"version": "2.0.0",
+	"dependencies": {
+		"archiver": "^3.0.0",
+		"bluebird": "^3.4.7",
+		"chai": "^3.5.0",
+		"dotenv": "^8.1.0",
+		"eslint": "^4.19.1",
+		"eslint-detailed-reporter": "^0.7.3",
+		"fs-extra": "^8.1.0",
+		"gulp": "^3.9.1",
+		"gulp-eslint": "^5.0.0",
+		"gulp-jsdoc3": "^2.0.0",
+		"gulp-mocha": "^5.0.0",
+		"gulp-rename": "^1.4.0",
+		"gulp-rimraf": "^0.2.2",
+		"gulp-zip": "^4.2.0",
+		"mocha": "^6.0.2",
+		"mochawesome": "^3.0.2",
+		"request": "^2.88.0",
+		"request-promise": "^4.2.2",
+		"sn-project": "github:bmoers/sn-project#semver:^3",
+		"uuid": "^3.3.2"
+	},
+	"scripts": {
+		"build": "gulp",
+		"deploy": "gulp deploy"
+	}
 }
