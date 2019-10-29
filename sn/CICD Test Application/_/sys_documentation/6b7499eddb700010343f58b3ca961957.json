@@ -1,0 +1,23 @@
+{
+  "element": "checked_out",
+  "help": null,
+  "hint": null,
+  "label": "Checked out",
+  "language": "en",
+  "name": "x_11413_cicd_test_cicd_test",
+  "plural": "Checked out",
+  "sys_class_name": "sys_documentation",
+  "sys_created_by": "admin",
+  "sys_created_on": "2019-10-29 15:45:36",
+  "sys_id": "6b7499eddb700010343f58b3ca961957",
+  "sys_mod_count": 0,
+  "sys_name": null,
+  "sys_package": null,
+  "sys_policy": null,
+  "sys_scope": null,
+  "sys_update_name": null,
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2019-10-29 15:45:36",
+  "url": null,
+  "url_target": null
+}
